@@ -3,29 +3,14 @@ class Solution {
         
        
 
-        StringBuilder builder1 = new StringBuilder();
-        StringBuilder builder2 = new StringBuilder();
-
-        for (int i = 0; i < s.length(); i++) {
-
-            if(i>=s.length()/2)
-            {
-                builder2.append(s.charAt(i));
-            }
-            else
-            {
-                builder1.append(s.charAt(i));
-            }
-
-        }
 
          int count1 = 0;
          int count2 = 0;
 
 
 
-        for (int a = 0; a < builder1.length(); a++) {
-            switch (builder1.charAt(a))
+        for (int a = 0; a < s.length()/2; a++) {
+            switch (s.charAt(a))
             {
                 case 'a':
                     count1++;
@@ -69,8 +54,10 @@ class Solution {
             }
         }
 
-            for (int b = 0; b < builder2.length(); b++) {
-                switch(builder2.charAt(b))
+
+
+            for (int b = s.length()/2; b < s.length(); b++) {
+                switch(s.charAt(b))
                 {
                     case 'a' : count2++;
                         break;
@@ -104,7 +91,7 @@ class Solution {
                 }
         }
 
-      
+
         if(count1==count2)
         {
             return true;
