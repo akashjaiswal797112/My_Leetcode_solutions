@@ -16,8 +16,9 @@ class Solution {
             }
         }
 
-       
         return builder.toString();
+        
+        
         
     //   return  address.replace(".","[.]");
 
