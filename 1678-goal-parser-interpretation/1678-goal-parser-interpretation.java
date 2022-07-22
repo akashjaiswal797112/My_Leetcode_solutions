@@ -1,14 +1,14 @@
 class Solution {
     public String interpret(String command) {
         
-//        String a = command.replace("()","o");
-//        String last =  a.replace("(al)","al");
+       String a = command.replace("()","o");
+       String last =  a.replace("(al)","al");
 
         
-//         return last;
+        return last;
         
         
- return command.replace("()","o").replace("(al)","al");
+// return command.replace("()","o").replace("(al)","al");
 
     }
 }
