@@ -7,9 +7,9 @@ class Solution {
         for (int i = 0; i < indices.length; i++) {
             arr[indices[i]]=s.charAt(i);
         }
-   
+        String output = new String(arr);
        
         
-        return new String(arr);
+        return output;
     }
 }
