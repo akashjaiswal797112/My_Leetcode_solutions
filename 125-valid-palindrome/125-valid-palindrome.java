@@ -5,9 +5,9 @@ class Solution {
         StringBuilder builder = new StringBuilder();
         String str=s.toLowerCase();
         for (int i = 0; i < str.length(); i++){
-            char ch = str.charAt(i);
-            if(  ((ch>='a') && (ch<='z')) || ((ch>='0') && (ch<='9')))
-            builder.append(ch);
+         
+            if(  ((str.charAt(i)>='a') && (str.charAt(i)<='z')) || ((str.charAt(i)>='0') && (str.charAt(i)<='9')))
+            builder.append(str.charAt(i));
         }
         String oldString = builder.toString();
         String reverse = String.valueOf(builder.reverse());
